@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from . import passwords
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'account.apps.AccountConfig',
 ]
 
@@ -86,6 +88,7 @@ DATABASES = {
 }
 
 
+
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
 
@@ -123,3 +126,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+EMAIL_HOST = 'data.home.pl'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'dzejdeveloper@data.pl'
+EMAIL_HOST_PASSWORD = passwords.email_password
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = 'dzejdeveloper@data.pl'
