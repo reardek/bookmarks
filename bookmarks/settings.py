@@ -134,3 +134,6 @@ EMAIL_HOST_USER = 'dzejdeveloper@data.pl'
 EMAIL_HOST_PASSWORD = passwords.email_password
 EMAIL_USE_TLS = True
 DEFAULT_FROM_EMAIL = 'dzejdeveloper@data.pl'
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
