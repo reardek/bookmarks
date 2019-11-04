@@ -2,5 +2,5 @@
 /.idea/
 bookmarks/passwords.py
 db.sqlite3
-/media/
-
+/media/*
+/venv/*
