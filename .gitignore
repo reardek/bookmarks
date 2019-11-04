@@ -1,6 +1,6 @@
-venv
-.idea
+/venv/
+/.idea/
 bookmarks/passwords.py
-media
 db.sqlite3
+/media/
 
